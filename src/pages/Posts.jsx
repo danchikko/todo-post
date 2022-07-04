@@ -10,8 +10,8 @@ import Pagination from '../components/UI/pagination/Pagination'
 import MySelect from '../components/UI/select/MySelect'
 import { useFetching } from '../hooks/useFetching'
 import { useObserver } from '../hooks/useObserver'
-import { usePosts } from '../hooks/usePosts'
 import { getPageCount } from '../utils/pages'
+import { usePosts } from '../hooks/usePosts'
 
 function Posts() {
 	const [posts, setPosts] = useState([])
