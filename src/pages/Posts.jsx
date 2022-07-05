@@ -61,7 +61,7 @@ function Posts() {
 				style={{ marginTop: '30px' }}
 				onClick={() => setModal(true)}
 			>
-				Создать пользователя
+				Create post
 			</MyButton>
 			<MyModal visible={modal} setVisible={setModal}>
 				<PostForm create={createPost} />
@@ -71,7 +71,7 @@ function Posts() {
 			<MySelect
 				value={limit}
 				onChange={(value) => setLimit(value)}
-				defaultValue='Количоство элементов на странице'
+				defaultValue='Number of elements per page'
 				options={[
 					{ value: 5, name: '5' },
 					{ value: 10, name: '10' },
@@ -79,11 +79,11 @@ function Posts() {
 					{ value: -1, name: 'all' },
 				]}
 			/>
-			{postError && <h1>Произошла ошибка ${postError}</h1>}
+			{postError && <h1>An error has occurred {postError}</h1>}
 			<PostList
 				remove={removePost}
 				posts={sortedAndSearchedPosts}
-				title={'Список постов 1'}
+				title={'List of posts'}
 			/>
 			<div ref={lastElement} style={{ height: 20, background: 'red' }} />
 			{isPostsLoading && (

@@ -1,7 +1,7 @@
 const Error = () => {
     return (
         <div>
-            <h1 style={{color: 'red'}}>Вы перешли не несуществующую страницу!</h1>
+            <h1 style={{color: 'red'}}>You have gone to a non-existent page!</h1>
         </div>
     )
 }

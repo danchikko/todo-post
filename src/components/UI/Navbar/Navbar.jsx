@@ -12,10 +12,10 @@ const Navbar = () => {
 	}
 	return (
 		<div className='navbar'>
-			<MyButton onClick={logout}>Выйти</MyButton>
+			<MyButton onClick={logout}>Close</MyButton>
 			<div className='navenar__linksv'>
-				<Link to='/about'>О сайте</Link>
-				<Link to='/posts'>Посты</Link>
+				<Link to='/about'>About the site</Link>
+				<Link to='/posts'>Posts</Link>
 			</div>
 		</div>
 	)

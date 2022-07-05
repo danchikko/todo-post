@@ -24,7 +24,7 @@ const PostIdPage = () => {
 	}, [])
 	return (
 		<div>
-			<h1>Вы открыли страницу поста c ID = {params.id}</h1>
+			<h1>You have opened the post page with ID ={params.id}</h1>
 			{isLoading ? (
 				<Loader />
 			) : (
@@ -32,7 +32,7 @@ const PostIdPage = () => {
 					{post.id}. {post.title}
 				</div>
 			)}
-			<h1>Комментарии</h1>
+			<h1>Comments</h1>
 			{isComLoading ? (
 				<Loader />
 			) : (

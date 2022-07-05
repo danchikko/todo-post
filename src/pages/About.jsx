@@ -1,7 +1,7 @@
 const About = () => {
     return (
         <h1>
-            Это приложение создано в качестве обуч. ролика на ULBI TV
+            This site is designed to develop skills
         </h1>
     )
 }
