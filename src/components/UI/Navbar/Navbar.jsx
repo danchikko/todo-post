@@ -13,8 +13,8 @@ const Navbar = () => {
 	return (
 		<div className='navbar'>
 			<MyButton onClick={logout}>Close</MyButton>
-			<div className='navenar__linksv'>
-				<Link to='/about'>About the site</Link>
+			<div className='navbar__links'>
+				<Link to='/about'>About</Link>
 				<Link to='/posts'>Posts</Link>
 			</div>
 		</div>

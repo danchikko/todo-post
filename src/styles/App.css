@@ -62,13 +62,17 @@
 
 .navbar {
     height: 50px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 15px;
     background: lightgray;
 }
 
 .navbar__links {
-    margin-left: auto;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
 }
