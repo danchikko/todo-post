@@ -11,7 +11,11 @@ const PostList = (props) => {
 			<h1 style={{ textAlign: 'center' }}>{props.title}</h1>
 			<TransitionGroup>
 				{props.posts.map((post, index) => (
-					<CSSTransition key={post.id} timeout={500} classNames='post'>
+					<CSSTransition
+						key={post.id}
+						timeout={500}
+						classNames='post'
+					>
 						<PostItem
 							remove={props.remove}
 							number={index + 1}

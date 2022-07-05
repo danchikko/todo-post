@@ -9,11 +9,11 @@ import Posts from '../pages/Posts'
 import Loader from './UI/Loader/Loader'
 
 const AppRouter = () => {
-	const {isAuth , isLoading } = useContext(AuthContext)
-    
-    if(isLoading) {
-        return <Loader />
-    }
+	const { isAuth, isLoading } = useContext(AuthContext)
+
+	if (isLoading) {
+		return <Loader />
+	}
 
 	return isAuth ? (
 		<Routes>
